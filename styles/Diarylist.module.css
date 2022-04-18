@@ -1,0 +1,58 @@
+.p {
+  font-size: 30px;
+  font-weight: 700;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #030366;
+}
+
+.text {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.textd {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration-color: rgb(3, 48, 129);
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+  flex: 1;
+  display: flex;
+  width: 1000px;
+  border-collapse: collapse;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.btn {
+  width: 77px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 50px;
+  border-width: 2px;
+  background: #030394;
+  color: white;
+  border-color: #030366;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border-width: 2px;
+  background: white;
+  color: #030366;
+  border-color: #030366;
+}

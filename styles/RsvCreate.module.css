@@ -1,0 +1,17 @@
+.btnrsv {
+  margin-top: 10px;
+  width: 85px;
+  height: 25px;
+
+  border-radius: 8px;
+
+  background: #0100a4;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.btnrsv:hover {
+  background-color: #fff;
+  color: #0100a4;
+  text-align: center;
+}

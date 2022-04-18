@@ -1,0 +1,121 @@
+.sidemain {
+  display: flex;
+  color: #030366;
+}
+
+.sidemenu {
+  height: 500px;
+  margin-top: 70px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  margin-top: -150px;
+  padding-bottom: 100px;
+}
+.sidebtn0 {
+  position: fixed;
+  margin: 200px 0 30px 5px;
+  width: 180px;
+  height: 50px;
+  background: #030366;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  border-width: 5px;
+  border-style: double;
+  border-color: white;
+  border-radius: 15%;
+}
+.sidebtn1 {
+  position: fixed;
+  margin: 310px 0 30px 30px;
+  width: 130px;
+  height: 40px;
+  background: white;
+  color: #030366;
+  font-size: 20px;
+  font-weight: 600;
+  border-width: 5px;
+  border-style: double;
+  border-color: #030366;
+  border-radius: 15%;
+  scroll-behavior: smooth;
+}
+.sidebtn2 {
+  position: fixed;
+  margin: 370px 0 20px 30px;
+  width: 130px;
+  height: 40px;
+  background: white;
+  color: #030366;
+  font-size: 20px;
+  font-weight: 600;
+  border-width: 5px;
+  border-style: double;
+  border-color: #030366;
+  border-radius: 15%;
+}
+.main {
+  margin-top: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+  min-height: 100vh;
+  margin: 10px 0 0 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px;
+  border-collapse: collapse;
+}
+
+.p {
+  font-size: 30px;
+  font-weight: 700;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 30px;
+}
+
+.thead {
+  color: #030366;
+}
+
+.tbody {
+  color: #030366;
+}
+
+.text {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn {
+  width: 70px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 50px;
+  border-width: 2px;
+  background: #030394;
+  color: white;
+  border-color: #030366;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border-width: 2px;
+  background: white;
+  color: #030366;
+  border-color: #030366;
+}

@@ -1,0 +1,75 @@
+.div {
+  border-radius: 2%;
+  overflow: hidden;
+  margin: 20px 20px 10px 20px;
+  flex-direction: column;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.div:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.svg1 {
+  display: flex;
+  align-items: center;
+}
+
+.svg11 {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: solid #0004ae;
+  border-radius: 15px;
+}
+
+.svg11:hover {
+  background-color: #0004ae;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.svg111 {
+  color: #0004ae;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.svg111:hover {
+  color: white;
+}
+.svg1111 {
+  text-decoration-line: none;
+  color: #0004ae;
+}
+.svg1111:hover {
+  color: white;
+}
+
+/* 1123 페이징처리시 필요 */
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagebtn {
+  margin: 0 20px 0 20px;
+  background-color: #0004ae;
+  color: white;
+  border-radius: 10%;
+}

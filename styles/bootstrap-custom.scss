@@ -1,0 +1,46 @@
+//@import "~bootstrap/scss/bootstrap.scss"
+
+@import "~bootstrap/scss/functions";
+
+/* ------------------------------------------------------ */
+$primary: #0100a4;
+// $primary: #2c3e50;
+$secondary: #95a5a6;
+$success: #18bc9c;
+$info: #3498db;
+$danger: #e74c3c;
+$warning: #f39c12;
+$light: #f8f9fa;
+$dark: #212529;
+$gagym: #0100a4;
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+/* ------------------------------------------------------ */
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+@import "~bootstrap/scss/utilities";
+/* ---------------------------------------------- */
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/navbar";
+/* ---------------------------------------------- */
+@import "~bootstrap/scss/helpers";
+
+@import "~bootstrap/scss/utilities/api";

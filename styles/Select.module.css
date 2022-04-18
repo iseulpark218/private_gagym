@@ -1,0 +1,28 @@
+.container {
+  padding: 0 0;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.span {
+  padding: 3px;
+  margin-top: 20px;
+  color: #0100a4;
+  font-weight: 800;
+  border-top: solid;
+  border-bottom: solid;
+}

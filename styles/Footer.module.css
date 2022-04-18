@@ -1,0 +1,48 @@
+.div1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: white;
+  color: #0000a4;
+  font-weight: 700;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: solid #0000a4;
+}
+
+.div22 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: smaller;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  border-top: #0000a4;
+  border-bottom: #0000a4;
+  border-style: double;
+  border-left-width: 0;
+  border-right-width: 0;
+  font-style: oblique;
+}
+
+.div33 {
+  text-decoration-line: none;
+  color: #0000a4;
+  font-size: smaller;
+}
+.div4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  font-size: small;
+  justify-content: center;
+}
