@@ -109,13 +109,13 @@ const GymList = ({ gymList }: gymListProp) => {
 };
 
 export async function getServerSideProps() {
-  // axios함수는 API 서버에 get method로 요청을 보내고 그 결과를 프로미스로 반환받습니다.
+  // axios함수는 API 서버에 get method로 요청을 보내고 그 결과를 프로미스로 반환받음.
 
   // GET방식은 서버에서 어떤 데이터를 가져와서 보여줄것인가를 정하는 용도로 쓴다.
   // 주소에 있는 쿼리스트링을 활용해 정보를 전달하는 것이고 GET 메서드는 값이나 상태등을 직접 바꿀수 없다.
   // 응답은 json 형태로 넘어온다.
 
-  https: const res = await axios.get<GymDetail[]>(
+  const res = await axios.get<GymDetail[]>(
     "http://ec2-3-36-96-181.ap-northeast-2.compute.amazonaws.com:8080/gagym/gym-list"
   );
   const gymList = res.data;
