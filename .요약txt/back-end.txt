@@ -1,0 +1,13 @@
+// REST
+1. 행위와 자원의URL로 자원에 접근방법을 표현
+  -> 자원(리소스, resource): *객체, 메서드, *테이블, 프로시저...
+     : /todos <- todos 객체에 접근하겠다. (todo목록에 접근하겠다.)
+  -> 행위(메서드, method): HTTP Method(GET, POST, PUT, PATCH, DELTE)
+     : 자원에 대해서 어떤 방식으로 접근하겠냐
+     : GET -> 리소스를 가져오겠다.
+     : POST -> 리소스에 추가하겠다.
+     : PUT -> 리소스를 수정하겠다.
+     : PATCH -> 리소스의 일부분을 수정하겠다.
+     : DELETE -> 리소스의 일부분을 삭제하겠다.
+
+@RequestBody 어노테이션에 의해서 JSON->객체 자동 변환
