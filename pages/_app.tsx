@@ -4,6 +4,7 @@ import "../styles/font.css";
 import { Provider } from "react-redux"; // react 앱에 redux store를 제공해줌
 import { store } from "../provider"; // redux store
 // _app은 서버로 요청이 들어왔을 때 가장 먼저 실행되는 컴포넌트로, 페이지에 적용할 공통 레이아웃의 역할을 합니다.
+// reducer를 통합하고, devTools를 합쳐서 store를 생성하여 export 한다.
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>

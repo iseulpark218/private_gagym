@@ -9,7 +9,7 @@ import rootSaga from "../middleware";
 import createSagaMiddleware from "@redux-saga/core";
 
 // saga middleware 생성
-// middleware: 중간에 먼가를 처리하는 소프트웨어
+// middleware: 중간에 뭔가를 처리하는 소프트웨어
 // redux saga는 redux 상태처리 전/후에 먼가를 해주는 라이브러리
 const sagaMiddleware = createSagaMiddleware();
 

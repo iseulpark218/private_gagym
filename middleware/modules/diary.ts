@@ -16,6 +16,8 @@ import { AxiosResponse } from "axios";
 
 import { addAlert } from "../../provider/modules/alert";
 
+// redux : 리덕스를 사용하면 통합적인 데이터 관리가 가능
+
 /* ========= saga action Payload 타입 =============== */
 export interface PageRequest {
   page: number;

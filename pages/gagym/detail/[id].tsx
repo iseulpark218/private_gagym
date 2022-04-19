@@ -216,7 +216,6 @@ const GymDetail = ({ gymDetail, trainers }: GymDetailProp) => {
               <img
                 src={"/gymservice/wifi.png"}
                 style={{ width: "100px" }}
-
                 // className={styles.imgd}
               />
               <span className={styles.divser111}>와이파이</span>
@@ -230,6 +229,7 @@ const GymDetail = ({ gymDetail, trainers }: GymDetailProp) => {
   );
 };
 
+// getServerSideProps 함수에서 데이터를 조회하고 반환함
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // SSR일 때 매개변수를 받는 방법
 

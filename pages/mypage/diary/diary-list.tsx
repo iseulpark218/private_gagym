@@ -9,10 +9,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../provider";
 import { requestFetchPagingDiary } from "../../../middleware/modules/diary";
 
+// redux : 리덕스를 사용하면 통합적인 데이터 관리가 가능
+
+// 날짜 처리, ex) 11/26
 const getTimeString = (unixtime: number) => {
   const dateTime = new Date(unixtime);
-  var month = ("0" + (1 + dateTime.getMonth())).slice(-2);
-  var day = ("0" + dateTime.getDate()).slice(-2);
+  let month = ("0" + (1 + dateTime.getMonth())).slice(-2);
+  let day = ("0" + dateTime.getDate()).slice(-2);
   return month + "/" + day;
 };
 
@@ -21,11 +24,11 @@ const DiaryList = () => {
   const router = useRouter();
   const dispatch = useDispatch<AppDispatch>();
 
+  // hook사용-useEffect(페이징/로딩/에러 처리 등)
   useEffect(() => {
     // 데이터 fetch가 안되었으면 데이터를 받아옴
     if (!diary.isFetched) {
       const diaryPageSize = localStorage.getItem("diary_page_size");
-
       dispatch(
         requestFetchPagingDiary({
           page: 0,
@@ -38,6 +41,7 @@ const DiaryList = () => {
   const handlePageSizeChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
     console.log(e.currentTarget.value);
     dispatch(
+// api쪽에 diary를 페이징으로 가져오는 action 설정 
       requestFetchPagingDiary({
         page: diary.page,
         size: +e.currentTarget.value,
@@ -109,6 +113,7 @@ const DiaryList = () => {
             </thead>
 
             <tbody className="tbody">
+              
               {diary.data.map((item, index) => (
                 <tr key={index}>
                   <td

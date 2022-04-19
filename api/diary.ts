@@ -1,4 +1,5 @@
 import axios from "axios";
+// 백엔드와 프론트엔드랑 통신을 쉽게 하기 위해 사용하는 라이브러리
 
 export interface DiaryPagingResponse {
   content: DiaryItemResponse[];
@@ -10,7 +11,6 @@ export interface DiaryPagingResponse {
 }
 
 // 서버로 부터 받아오는 데이터 1건에 대한 타입
-
 export interface DiaryItemResponse {
   id: number;
   memberName: string;
@@ -22,8 +22,8 @@ export interface DiaryItemResponse {
   trainerName: string;
   trainerFeedback: string;
   diaryCreateTime: number;
-
 }
+
 export interface DiaryItemRequest {
   memberName: string;
   diaryMorning: string;
@@ -38,11 +38,14 @@ export interface DiaryItemRequest {
 
 // 서버하고 데이터 연동하는 api처리 목록을 별도의 객체로 작성
 // process.env.변수명
+// ec2 인스턴스 : 클라우드의 가상 서버(컴퓨터 한 대의 개념)
 const diaryApi = {
   // axios.get<응답데이터의타입>(요청URL);
   // GET 요청URL HTTP/1.1
   get: (id: number) =>
-    axios.get<DiaryItemResponse[]>(`http://ec2-3-36-96-181.ap-northeast-2.compute.amazonaws.com:8080/diary/${id}`),
+    axios.get<DiaryItemResponse[]>(
+      `http://ec2-3-36-96-181.ap-northeast-2.compute.amazonaws.com:8080/diary/${id}`
+      ),
 
     // axios.post<응답타입>(요청URL, 요청객체(JSON바디));
   // POST 요청URL HTTP/1.1  {...}

@@ -11,7 +11,12 @@ import { DiaryItem } from "../../../provider/modules/diary";
 import { requestAddDiary } from "../../../middleware/modules/diary";
 import styles from "../../../styles/Diarycreate.module.css";
 
+// redux : 리덕스를 사용하면 통합적인 데이터 관리가 가능
+
 const DiaryCreate = () => {
+  // useRef는 React Hook의 일종으로, 인자로 넘어온 초깃값을 useRef 객체의 .current 프로퍼티에 저장한다.
+  // DOM 객체를 직접 가리켜서 내부 값을 변경하거나 focus() 메소드를 사용하거나 하는 때에 주로 사용하고, 변경되어도 컴포넌트가 리렌더링되지 않도록 하기 위한 값들을 저장하기 위해서도 사용한다. (이는 useRef가 내용이 변경되어도 이를 알려주지 않기 때문이다. .current 프로피터를 변경시키는 것은 리렌더링을 발생시키지 않고, 따라서 로컬 변수 용도로 사용할 수 있다.)
+  // 위의 말은 useRef의 반환 타입인 MutableRefObject와 RefObject의 정의를 보면 더욱 명확하게 이해할 수 있다.
   const memberName = useRef() as MutableRefObject<HTMLInputElement>;
   const diaryMorning = useRef() as MutableRefObject<HTMLInputElement>;
   const diaryLunch = useRef() as MutableRefObject<HTMLInputElement>;
@@ -37,6 +42,8 @@ const DiaryCreate = () => {
 
   // isAddCompleted값이 변경되면 처리(처음 렌더링되는 시점에도 처리됨)
   // 2. state가 변경되면 처리되는 함수
+  // *useEffect : React Hooks은 리액트의 새로운 기능으로 React 16.8버전에 새로 추가된 기능으로 state, component에 대한 것들을 바꿔놓았다.
+  // 만일 앱을 react hook을 사용하여 만든다면 class component, render 등을 안해도 된다는 뜻이다.
   useEffect(() => {
     console.log("--isAddCompleted 변경: " + isAddCompleted);
     // true이면 화면이동

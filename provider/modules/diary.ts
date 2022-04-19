@@ -44,9 +44,17 @@ const initialState: diaryState = {
   totalPages: 0,
 };
 
+// redux toolkit의 createSlice는 slice 객체를 생성하는 함수이며,
+// slice 객체에는 action 생성자 함수와 reducer 함수를 자체적으로 생성하여 프로퍼티로 갖고 있는 객체입니다.
+
+// name: slice의 이름. 추후에 생성될 action 객체의 type 프로퍼티값의 prefix가 된다.
+// initialState: 초기 상태 객체를 작성합니다.
+// reducers: 상태를 변경하는 메서드를 작성한다. 각 메서드는 기존 상태 객체와 action 객체를 인수로 전달받고 반환값으로 새로운 객체를 작성한다.
+// 반환값으로 작성된 객체로 대체됩니다.
+
 const diarySlice = createSlice({
-  name: "diary",
-  initialState,
+  name: "diary", // slice 이름
+  initialState, // 초기 상태
   reducers: {
     // PayloadAction<payload타입>
     // payload로 item객체를 받음
